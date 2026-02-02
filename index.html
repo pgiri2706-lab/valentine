@@ -5,19 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentine's Surprise</title>
     <style>
-        body { background-color: #ffe6e6; text-align: center; font-family: 'Arial', sans-serif; overflow: hidden; }
+        body { background-color: #ffe6e6; text-align: center; font-family: 'Arial', sans-serif; }
         .container { margin-top: 50px; }
         .iconic-pic { width: 300px; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
         h1 { color: #d63384; }
-        .btn { font-size: 20px; padding: 15px 30px; border: none; border-radius: 10px; cursor: pointer; margin: 10px; transition: 0.3s; }
+        .btn { font-size: 20px; padding: 15px 30px; border: none; border-radius: 10px; cursor: pointer; margin: 10px; }
         #yesBtn { background-color: #ff4d6d; color: white; }
         #noBtn { background-color: #ccc; color: black; position: absolute; }
     </style>
 </head>
 <body>
-
     <div id="main-content" class="container">
-        <img src="us.jpeg.jpg" alt="Our Photo" class="iconic-pic">
+        <img src="us.jpeg.jpg" alt="Shark and Frog Duo" class="iconic-pic">
         <h1>10 Months Together... ❤️</h1>
         <p>Will you be my Valentine?</p>
         <button id="yesBtn" class="btn" onclick="celebrate()">YES</button>
@@ -34,10 +33,8 @@
             noBtn.style.left = x + 'px';
             noBtn.style.top = y + 'px';
         });
-
         function celebrate() {
             document.getElementById('main-content').innerHTML = "<h1>YES! 💍</h1><p>I love you to the moon and back!</p>";
-            // Add heart animation logic here if you want
         }
     </script>
 </body>
